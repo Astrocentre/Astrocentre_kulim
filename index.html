@@ -4,42 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro Centre Kulim</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #800080; color: white; text-align: center; padding: 15px; font-size: 24px; }
-        .container { width: 90%; margin: auto; padding: 20px; }
-        .package { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px; }
-        .contact { background-color: #f4f4f4; padding: 20px; text-align: center; margin-top: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #ff0055;
+            color: white;
+            padding: 20px;
+        }
+        #packages {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .package {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+        }
+        .package img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <header>Welcome to Astro Centre Kulim</header>
+    <header>
+        <h1>Welcome to Astro Centre Kulim</h1>
+        <p>Your go-to place for the best Astro packages and promotions!</p>
+    </header>
     
-    <div class="container">
+    <section id="packages">
         <h2>Our Packages</h2>
-        
         <div class="package">
-            <h3>Sports Pack - RM99.99/month</h3>
-            <p>Enjoy live Premier League, F1, MotoGP, and more with 120+ channels and Astro GO.</p>
+            <img src="sports-pack.jpg" alt="Sports Pack">
+            <h3>Sports Pack</h3>
+            <p>Live sports action for just RM99.99/month!</p>
         </div>
-        
         <div class="package">
-            <h3>Entertainment Pack - RM49.99/month</h3>
-            <p>Stream 95+ channels of movies, dramas, and family shows with Astro GO.</p>
+            <img src="entertainment-pack.jpg" alt="Entertainment Pack">
+            <h3>Entertainment Pack</h3>
+            <p>Best movies and TV shows at RM49.99/month!</p>
         </div>
-        
         <div class="package">
+            <img src="epic-pack.jpg" alt="Epic Pack">
             <h3>Epic Pack</h3>
-            <p>Enjoy premium channels with the best movies, series, and exclusive content.</p>
+            <p>All-in-one package for RM129.99/month!</p>
         </div>
-    </div>
+    </section>
     
-    <div class="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>📍 Location: Astro Centre Kulim</p>
-        <p>📞 Call/WhatsApp: +60X-XXXXXXX</p>
-        <p>📧 Email: contact@astrocentrekulim.com</p>
-        <p><strong>Special Promotions Available! Contact us now for the best deals!</strong></p>
-    </div>
+        <p>📍 Location: Kulim, Malaysia</p>
+        <p>📞 Call: +60 12-3456789</p>
+        <p>📩 Email: info@astrocentre.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Astro Centre Kulim. All rights reserved.</p>
+    </footer>
 </body>
 </html>
