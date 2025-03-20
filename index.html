@@ -10,66 +10,71 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #ff6a00, #ee0979);
             text-align: center;
+            color: white;
         }
         header {
-            background-color: #ff0055;
+            background: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 20px;
+            font-size: 1.5em;
         }
         #packages {
             display: flex;
             justify-content: center;
             gap: 20px;
-            padding: 20px;
+            padding: 40px;
         }
         .package {
             background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            width: 280px;
+            color: black;
         }
         .package img {
             width: 100%;
             border-radius: 10px;
         }
         footer {
-            background: #333;
+            background: rgba(0, 0, 0, 0.9);
             color: white;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         .whatsapp-button {
             position: fixed;
-            bottom: 20px;
+            bottom: 80px;
             right: 20px;
             background-color: #25D366;
             color: white;
-            padding: 10px;
+            padding: 15px;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .whatsapp-button img {
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Astro Centre Kulim</h1>
-        <p>Your go-to place for the best Astro packages and promotions!</p>
+        <p>Your one-stop destination for the best Astro packages and exclusive deals!</p>
     </header>
     
     <section id="packages">
-        <h2>Our Packages</h2>
+        <h2>Our Exclusive Packages</h2>
         <div class="package">
             <img src="sports-pack.jpg" alt="Sports Pack">
             <h3>Sports Pack</h3>
@@ -89,16 +94,17 @@
     
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>📍 Location: 287-U, Jalan Aman, Kulim, 09000 Kulim, Kedah</p>
-        <p>📞 Call: 04-492 7379</p>
-        <p>📩 Email: astrocentrekulim287@gmail.com</p>
+        <p>📍 Location: Kulim, Malaysia</p>
+        <p>📞 Call: +60 19-9371793</p>
+        <p>📩 Email: astrocentrekuim287@gmail.com</p>
+        <p>✨ Experience the best in entertainment with Astro Centre Kulim. Sign up today! ✨</p>
     </section>
     
     <footer>
         <p>&copy; 2025 Astro Centre Kulim. All rights reserved.</p>
     </footer>
     
-    <a href="https://wa.me/60199371793" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/6019371793" class="whatsapp-button" target="_blank">
         <img src="whatsapp-icon.png" alt="WhatsApp">
     </a>
 </body>
