@@ -13,6 +13,7 @@
             background: linear-gradient(to bottom, #ff6a00, #ee0979);
             text-align: center;
             color: white;
+            transition: background 0.5s ease-in-out;
         }
         header {
             background: rgba(0, 0, 0, 0.8);
@@ -20,23 +21,36 @@
             padding: 20px;
             font-size: 1.5em;
         }
-        #packages, #bundle-packages {
+        .speed-category {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background 0.5s ease-in-out;
+        }
+        .speed-category:nth-child(odd) {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .packages-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            padding: 40px;
+            padding: 20px;
         }
-        .package, .bundle {
+        .package {
             background: white;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
             width: 90%;
             max-width: 400px;
             color: black;
+            transition: transform 0.3s ease-in-out;
         }
-        .package img, .bundle img {
+        .package:hover {
+            transform: scale(1.05);
+        }
+        .package img {
             width: 100%;
             border-radius: 10px;
         }
@@ -44,7 +58,7 @@
             background: rgba(0, 0, 0, 0.9);
             color: white;
             padding: 20px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -75,41 +89,66 @@
         <p>Your one-stop destination for the best Astro packages and exclusive deals!</p>
     </header>
     
-    <section id="packages">
-        <h2>Our Exclusive Packages</h2>
-        <div class="package">
-            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/WhatsApp%20Image%202025-03-08%20at%201.59.17%20PM.jpeg" alt="Sports Pack">
-            <h3>Sports Pack</h3>
-            <p>Live sports action for just RM99.99/month!</p>
-        </div>
-        <div class="package">
-            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/WhatsApp%20Image%202025-03-08%20at%201.59.14%20PM.jpeg" alt="Entertainment Pack">
-            <h3>Entertainment Pack</h3>
-            <p>Best movies and TV shows at RM49.99/month!</p>
-        </div>
-        <div class="package">
-            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/WhatsApp%20Image%202025-03-08%20at%201.59.15%20PM.jpeg" alt="Epic Pack">
-            <h3>Epic Pack</h3>
-            <p>All-in-one package for RM129.99/month!</p>
+    <section class="speed-category">
+        <h2>100Mbps Packages</h2>
+        <div class="packages-container">
+            <div class="package">
+                <img src="images/100mbps-entertainment.jpg" alt="100Mbps Entertainment Pack">
+                <h3>Entertainment Pack</h3>
+                <p>RM128.99/month - Includes Astro Fibre + TV Pack</p>
+            </div>
+            <div class="package">
+                <img src="images/100mbps-sports.jpg" alt="100Mbps Sports Pack">
+                <h3>Sports Pack</h3>
+                <p>RM178.99/month - Perfect for sports lovers</p>
+            </div>
+            <div class="package">
+                <img src="images/100mbps-epic.jpg" alt="100Mbps Epic Pack">
+                <h3>Epic Pack</h3>
+                <p>RM278.99/month - Ultimate entertainment experience</p>
+            </div>
         </div>
     </section>
     
-    <section id="bundle-packages">
-        <h2>Bundle Packages</h2>
-        <div class="bundle">
-            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/bundle-100mbps.jpg" alt="100Mbps Entertainment Pack">
-            <h3>100Mbps Entertainment Pack</h3>
-            <p>RM128.99/month - Includes Astro Fibre + TV Pack</p>
+    <section class="speed-category">
+        <h2>500Mbps Packages</h2>
+        <div class="packages-container">
+            <div class="package">
+                <img src="images/500mbps-entertainment.jpg" alt="500Mbps Entertainment Pack">
+                <h3>Entertainment Pack</h3>
+                <p>RM148.99/month - Includes Astro Fibre + TV Pack</p>
+            </div>
+            <div class="package">
+                <img src="images/500mbps-sports.jpg" alt="500Mbps Sports Pack">
+                <h3>Sports Pack</h3>
+                <p>RM198.99/month - Perfect for sports lovers</p>
+            </div>
+            <div class="package">
+                <img src="images/500mbps-epic.jpg" alt="500Mbps Epic Pack">
+                <h3>Epic Pack</h3>
+                <p>RM298.99/month - Ultimate entertainment experience</p>
+            </div>
         </div>
-        <div class="bundle">
-            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/bundle-500mbps.jpg" alt="500Mbps Epic Pack">
-            <h3>500Mbps Epic Pack</h3>
-            <p>RM278.99/month - Ultimate entertainment and high-speed browsing</p>
-        </div>
-        <div class="bundle">
-            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/bundle-800mbps.jpg" alt="800Mbps Ultra Pack">
-            <h3>800Mbps Ultra Pack</h3>
-            <p>RM328.99/month - The fastest internet for the ultimate experience</p>
+    </section>
+    
+    <section class="speed-category">
+        <h2>800Mbps Packages</h2>
+        <div class="packages-container">
+            <div class="package">
+                <img src="images/800mbps-entertainment.jpg" alt="800Mbps Entertainment Pack">
+                <h3>Entertainment Pack</h3>
+                <p>RM168.99/month - Includes Astro Fibre + TV Pack</p>
+            </div>
+            <div class="package">
+                <img src="images/800mbps-sports.jpg" alt="800Mbps Sports Pack">
+                <h3>Sports Pack</h3>
+                <p>RM218.99/month - Perfect for sports lovers</p>
+            </div>
+            <div class="package">
+                <img src="images/800mbps-epic.jpg" alt="800Mbps Epic Pack">
+                <h3>Epic Pack</h3>
+                <p>RM328.99/month - Ultimate entertainment experience</p>
+            </div>
         </div>
     </section>
     
