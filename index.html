@@ -14,28 +14,30 @@
             text-align: center;
             color: white;
             transition: background 0.5s ease-in-out;
+            overflow-x: hidden;
         }
         header {
             background: rgba(0, 0, 0, 0.8);
             color: white;
-            padding: 20px;
-            font-size: 1.5em;
+            padding: 40px;
+            font-size: 2em;
+            text-transform: uppercase;
         }
-        .speed-category, .astro-packages, .astro-fiber {
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            transition: background 0.5s ease-in-out;
+        .section {
+            padding: 60px 20px;
+            transition: transform 0.5s ease-in-out;
         }
-        .speed-category:nth-child(odd), .astro-packages:nth-child(odd), .astro-fiber:nth-child(odd) {
+        .astro-packages, .astro-fiber {
             background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+            padding: 40px;
         }
-        .packages-container {
+        .package-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
-            padding: 20px;
         }
         .package {
             background: white;
@@ -54,20 +56,11 @@
             width: 100%;
             border-radius: 10px;
         }
-        footer {
-            background: rgba(0, 0, 0, 0.9);
-            color: white;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
         .whatsapp-button {
             position: fixed;
             bottom: 30px;
             right: 20px;
             background-color: #25D366;
-            color: white;
             padding: 15px;
             border-radius: 50%;
             width: 60px;
@@ -85,13 +78,13 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Astro Centre Kulim</h1>
-        <p>Your one-stop destination for the best Astro packages and exclusive deals!</p>
+        <h1>Astro Centre Kulim</h1>
+        <p>Your one-stop destination for the best Astro and Fibre packages!</p>
     </header>
     
-    <section class="astro-packages">
-        <h2>Our Exclusive Packages</h2>
-        <div class="packages-container">
+    <section class="astro-packages section">
+        <h2>Our Exclusive Astro Packages</h2>
+        <div class="package-container">
             <div class="package">
                 <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/WhatsApp%20Image%202025-03-08%20at%201.59.17%20PM.jpeg" alt="Sports Pack">
                 <h3>Sports Pack</h3>
@@ -109,18 +102,26 @@
             </div>
         </div>
     </section>
-
-    <section class="astro-fiber">
+    
+    <section class="astro-fiber section">
         <h2>Astro Fibre Packages</h2>
-        <p>Choose your speed and enjoy seamless internet connectivity:</p>
-        <ul>
-            <li>100 Mbps - RM99/month</li>
-            <li>500 Mbps - RM199/month</li>
-            <li>800 Mbps - RM299/month</li>
-        </ul>
+        <div class="package-container">
+            <div class="package">
+                <h3>100Mbps Plan</h3>
+                <p>RM99/month - Suitable for basic streaming and browsing.</p>
+            </div>
+            <div class="package">
+                <h3>500Mbps Plan</h3>
+                <p>RM199/month - Fast speed for gaming and high-quality streaming.</p>
+            </div>
+            <div class="package">
+                <h3>800Mbps Plan</h3>
+                <p>RM299/month - Best for multiple users and ultra-fast connectivity.</p>
+            </div>
+        </div>
     </section>
     
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
         <p>📍 Location: Kulim, Malaysia</p>
         <p>📞 Call: +60 19-9371793</p>
@@ -137,4 +138,3 @@
     </a>
 </body>
 </html>
-
