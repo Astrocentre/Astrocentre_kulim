@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ff6a00, #ee0979);
+            background: linear-gradient(to bottom, #ff6a00, #ee0979);
             text-align: center;
             color: white;
         }
@@ -20,14 +20,14 @@
             padding: 20px;
             font-size: 1.5em;
         }
-        #packages {
+        #packages, #bundle-packages {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
             padding: 40px;
         }
-        .package {
+        .package, .bundle {
             background: white;
             padding: 20px;
             border-radius: 15px;
@@ -36,7 +36,7 @@
             max-width: 400px;
             color: black;
         }
-        .package img {
+        .package img, .bundle img {
             width: 100%;
             border-radius: 10px;
         }
@@ -44,13 +44,13 @@
             background: rgba(0, 0, 0, 0.9);
             color: white;
             padding: 20px;
-            position: relative;
+            position: fixed;
             bottom: 0;
             width: 100%;
         }
         .whatsapp-button {
             position: fixed;
-            bottom: 20px;
+            bottom: 30px;
             right: 20px;
             background-color: #25D366;
             color: white;
@@ -91,6 +91,25 @@
             <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/WhatsApp%20Image%202025-03-08%20at%201.59.15%20PM.jpeg" alt="Epic Pack">
             <h3>Epic Pack</h3>
             <p>All-in-one package for RM129.99/month!</p>
+        </div>
+    </section>
+    
+    <section id="bundle-packages">
+        <h2>Bundle Packages</h2>
+        <div class="bundle">
+            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/bundle-100mbps.jpg" alt="100Mbps Entertainment Pack">
+            <h3>100Mbps Entertainment Pack</h3>
+            <p>RM128.99/month - Includes Astro Fibre + TV Pack</p>
+        </div>
+        <div class="bundle">
+            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/bundle-500mbps.jpg" alt="500Mbps Epic Pack">
+            <h3>500Mbps Epic Pack</h3>
+            <p>RM278.99/month - Ultimate entertainment and high-speed browsing</p>
+        </div>
+        <div class="bundle">
+            <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/bundle-800mbps.jpg" alt="800Mbps Ultra Pack">
+            <h3>800Mbps Ultra Pack</h3>
+            <p>RM328.99/month - The fastest internet for the ultimate experience</p>
         </div>
     </section>
     
