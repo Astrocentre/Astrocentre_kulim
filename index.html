@@ -10,13 +10,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #ff6a00, #ee0979);
+            background: linear-gradient(to bottom, #000000, #4b0082);
             text-align: center;
             color: white;
             transition: background 0.5s ease-in-out;
         }
         header {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             color: white;
             padding: 20px;
             font-size: 1.5em;
@@ -24,6 +24,7 @@
             top: 0;
             width: 100%;
             z-index: 1000;
+            transition: background 0.5s ease-in-out;
         }
         .nav-links {
             display: flex;
@@ -35,36 +36,34 @@
             color: white;
             text-decoration: none;
             font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav-links a:hover {
+            color: #ff6a00;
         }
         .content {
             margin-top: 100px;
         }
-        .package, .astro-packages {
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            transition: background 0.5s ease-in-out;
-        }
-        .packages-container {
+        .package-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
-            padding: 20px;
+            padding: 40px;
         }
         .package {
-            background: white;
+            background: rgba(255, 255, 255, 0.2);
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
             width: 90%;
             max-width: 400px;
-            color: black;
-            transition: transform 0.3s ease-in-out;
+            color: white;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
         }
         .package:hover {
             transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.4);
         }
         .package img {
             width: 100%;
@@ -103,6 +102,7 @@
         <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#packages">Packages</a>
+            <a href="#astrofiber">Astro Fiber</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -112,9 +112,9 @@
         <p>Your one-stop destination for the best Astro packages and exclusive deals!</p>
     </section>
     
-    <section id="packages" class="astro-packages">
+    <section id="packages" class="content">
         <h2>Our Exclusive Packages</h2>
-        <div class="packages-container">
+        <div class="package-container">
             <div class="package">
                 <img src="https://raw.githubusercontent.com/Astrocentre/Astrocentre_kulim/refs/heads/main/WhatsApp%20Image%202025-03-08%20at%201.59.17%20PM.jpeg" alt="Sports Pack">
                 <h3>Sports Pack</h3>
@@ -132,14 +132,32 @@
             </div>
         </div>
     </section>
+
+    <section id="astrofiber" class="content">
+        <h2>Astro Fiber Packages</h2>
+        <p>Discover high-speed internet plans with unbeatable deals!</p>
+        <div class="package-container">
+            <div class="package">
+                <h3>Astro Fiber 100Mbps</h3>
+                <p>High-speed browsing and streaming for RM99/month</p>
+            </div>
+            <div class="package">
+                <h3>Astro Fiber 500Mbps</h3>
+                <p>Faster speed for gaming and multiple devices at RM199/month</p>
+            </div>
+            <div class="package">
+                <h3>Astro Fiber 800Mbps</h3>
+                <p>Ultimate speed and performance for RM299/month</p>
+            </div>
+        </div>
+    </section>
     
-    <section id="contact">
+    <section id="contact" class="content">
         <h2>Contact Us</h2>
         <p>📍 Address: 287-U, Jalan Aman, Kulim, 09000 Kulim, Kedah</p>
         <p>📞 Phone: 04-492 7379</p>
         <p>🕒 Hours: Open ⋅ Closes 5:30 PM (Ramadan might affect these hours)</p>
         <p>📩 Email: astrocentrekuim287@gmail.com</p>
-        <p>✨ Experience the best in entertainment with Astro Centre Kulim. Sign up today! ✨</p>
     </section>
     
     <footer>
